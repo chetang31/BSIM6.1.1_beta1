@@ -1,0 +1,968 @@
+
+Logging console messages in a file named STDOUT_pmos
+
+QA suite comparison for pmos
+Working directory is /users/phd/agarwalh/chetan/QA_SUIT_pmos_hspice/pmos
+Mon Mar 23 01:22:36 IST 2015
+
+QA test  specification file is ./qaSpec
+
+Reference data file is reference_hspice
+
+Simulator type is hspice
+Removing carriage return characters from ../compareSimulationResults.pl 
+Removing carriage return characters from ../runQaTests.pl 
+Removing carriage return characters from ../hspice.pm 
+Removing carriage return characters from ../modelQaTestRoutines.pm 
+Removing carriage return characters from ../Makefile 
+Removing carriage return characters from qaSpec 
+
+Set up symbolic links and permissions for QA scripts
+ source /cad/synopsys/Hspice/2012.sh
+ 
+Simulator version/Verilog-A version
+./runQaTests.pl -sv-s hspice ./qaSpec
+G-2012.06 unknown
+ 
+Variants are:
+./runQaTests.pl -lv -s hspice ./qaSpec
+standard Flip_N m
+ 
+Tests are:
+./runQaTests.pl -lt -s hspice ./qaSpec
+Idvg_core_sw Idvg_core_lw Idvg_core_lt Idvg_core_st Idvgb_core_sw Idvgb_core_lw Idvgb_core_lt Idvgb_core_st Idvd_core_sw Idvd_core_lw Idvd_core_lt Idvd_core_st Idvdb_core_sw Idvdb_core_lw Idvdb_core_lt Idvdb_core_st acvg_core_sw acvg_core_lw acvg_core_lt acvg_core_st acvgb_core_sw acvgb_core_lw acvgb_core_lt acvgb_core_st acvd_core_sw acvd_core_lw acvd_core_lt acvd_core_st acvdb_core_sw acvdb_core_lw acvdb_core_lt acvdb_core_st acfreq_core_sw acfreq_core_lw acfreq_core_lt acfreq_core_st Idvd_diode_lt Idvdb_diode_lt acvd_diode_lt acvdb_diode_lt acfreq_diode_lt Idvg_ig_sw Idvg_ig_lw Idvg_ig_lt Idvg_ig_st Idvgb_ig_sw Idvgb_ig_lw Idvgb_ig_lt Idvgb_ig_st Idvd_ig_sw Idvd_ig_lw Idvd_ig_lt Idvd_ig_st Idvdb_ig_sw Idvdb_ig_lw Idvdb_ig_lt Idvdb_ig_st acvg_ig_sw acvg_ig_lw acvg_ig_lt acvg_ig_st acvgb_ig_sw acvgb_ig_lw acvgb_ig_lt acvgb_ig_st acvd_ig_sw acvd_ig_lw acvd_ig_lt acvd_ig_st acvdb_ig_sw acvdb_ig_lw acvdb_ig_lt acvdb_ig_st acfreq_ig_sw acfreq_ig_lw acfreq_ig_lt acfreq_ig_st acnoise1g_sw acnoise2g_sw acnoise1g_lw acnoise2g_lw acnoise1g_lt acnoise2g_lt acnoise1g_st acnoise2g_st acnoise1d_sw acnoise2d_sw acnoise1d_lw acnoise2d_lw acnoise1d_lt acnoise2d_lt acnoise2d_st
+ 
+Operating system
+./runQaTests.pl -platform -s hspice ./qaSpec
+x86_64_Linux_2.6.18-274.el5
+ 
+make clean
+ 
+make hspice  qaSpecFile=./qaSpec
+
+******
+****** ./qaSpec tests for hspice
+****** (for version G-2012.06 unknown on platform x86_64_Linux_2.6.18-274.el5)
+******
+
+****** Checking test (hspice): Idvg_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvg_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvg_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvg_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvgb_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvgb_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvgb_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvgb_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvg_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvg_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvg_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvg_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvgb_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvgb_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvgb_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvgb_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_diode_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_diode_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_diode_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_diode_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_diode_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvg_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvg_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvg_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvg_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvgb_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvgb_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvgb_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvgb_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvg_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvg_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvg_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvg_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvgb_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvgb_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvgb_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvgb_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise1g_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise2g_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise1g_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise2g_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise1g_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise2g_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise1g_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise2g_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise1d_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (within specified tolerances)
+
+****** Checking test (hspice): acnoise2d_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (within specified tolerances)
+
+****** Checking test (hspice): acnoise1d_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (within specified tolerances)
+
+****** Checking test (hspice): acnoise2d_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise1d_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (within specified tolerances)
+
+****** Checking test (hspice): acnoise2d_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+	 variant: m                   (compared to: standard ) MATCH       (within specified tolerances)
+
+
+/bin/sh: line 0: [: too many arguments
+
+******
+****** Comparing previously run ./qaSpec tests for hspice
+****** (for version G-2012.06 on platform x86_64_Linux_2.6.18-274.el5)
+******
+
+****** Checking test (hspice): Idvg_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvg_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvg_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvg_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvgb_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvgb_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvgb_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvgb_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvg_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvg_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvg_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvg_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvgb_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvgb_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvgb_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvgb_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_core_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_core_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_core_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_core_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_diode_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_diode_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_diode_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_diode_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_diode_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvg_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvg_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvg_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvg_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvgb_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvgb_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvgb_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvgb_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvd_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): Idvdb_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvg_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvg_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvg_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvg_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvgb_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvgb_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvgb_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvgb_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvd_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acvdb_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_ig_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_ig_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_ig_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acfreq_ig_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise1g_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise2g_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise1g_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise2g_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise1g_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise2g_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise1g_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise2g_st
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise1d_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (within specified tolerances)
+
+****** Checking test (hspice): acnoise2d_sw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (within specified tolerances)
+
+****** Checking test (hspice): acnoise1d_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (within specified tolerances)
+
+****** Checking test (hspice): acnoise2d_lw
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (exact)
+
+****** Checking test (hspice): acnoise1d_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (within specified tolerances)
+
+****** Checking test (hspice): acnoise2d_lt
+     variant: standard            ************************ no results to compare to
+     variant: Flip_N              (compared to: standard ) MATCH       (exact)
+     variant: m                   (compared to: standard ) MATCH       (within specified tolerances)
+
+
+
+Done
